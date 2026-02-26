@@ -1,7 +1,7 @@
 # UserAssistView
 
 UserAssistView is a forensic analysis tool designed to parse and visualize the **UserAssist** Windows Registry artifact.  
-It provides structured insights into user-executed programs, including execution counts, timestamps, focus metrics, digital signature status and YARA RULES
+It provides structured insights into user-executed programs, including `execution counts, timestamps, focus metrics, digital signature status and YARA RULES`
 
 ---
 
@@ -10,7 +10,7 @@ It provides structured insights into user-executed programs, including execution
 ### UserAssist Parsing
 
 * Parses UserAssist registry entries directly from Windows
-* Automatic ROT13 / {GUID} decoding of stored paths
+* Automatic `ROT13` / `{GUID}` decoding of stored paths
 
 ### Execution Metadata
 
@@ -22,6 +22,10 @@ It provides structured insights into user-executed programs, including execution
   * **Last Execution Time**
 
 * Helps reconstruct user activity timelines
+
+### Replaces Detector
+
+* Analyzes the USNJrnl and checks if the files contain these replaces: `Type, Hex, Copy and Explorer`
 
 ### Yara Rules Integration
 
@@ -53,4 +57,5 @@ Each UserAssist entry includes:
 
 ## Hideable Colums
 
-Right-click on the column header to select which column to hide.
+
+`Right-click` on the column header to select which column to hide.
